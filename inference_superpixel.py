@@ -167,7 +167,7 @@ parser.add_argument(
     "--fullscreen",
     action='store_true',
     help="run in full screen mode")
-args = parser.parse_args()
+args, unknown = parser.parse_known_args()
 print(f'\n{args}')
 ##########################################################################
 
